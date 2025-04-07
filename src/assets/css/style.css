@@ -369,12 +369,11 @@ button.comfy-queue-btn {
 
 @media only screen and (max-height: 850px) {
   .comfy-menu {
-    display: none !important; 
-    /* top: 0 !important;
+    top: 0 !important;
     bottom: 0 !important;
     left: auto !important;
     right: 0 !important;
-    border-radius: 0; */
+    border-radius: 0;
   }
 
   .comfy-menu span.drag-handle {
