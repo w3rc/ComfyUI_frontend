@@ -71,7 +71,7 @@ const getTabTooltipSuffix = (tab: SidebarTabExtension) => {
 
 <style scoped>
 .side-tool-bar-container {
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
 
