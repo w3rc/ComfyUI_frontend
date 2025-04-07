@@ -204,14 +204,14 @@ export function useCoreCommands(): ComfyCommand[] {
         })
       }
     },
-    {
-      id: 'Comfy.BrowseTemplates',
-      icon: 'pi pi-folder-open',
-      label: 'Browse Templates',
-      function: () => {
-        dialogService.showTemplateWorkflowsDialog()
-      }
-    },
+    // {
+    //   id: 'Comfy.BrowseTemplates',
+    //   icon: 'pi pi-folder-open',
+    //   label: 'Browse Templates',
+    //   function: () => {
+    //     dialogService.showTemplateWorkflowsDialog()
+    //   }
+    // },
     {
       id: 'Comfy.Canvas.ZoomIn',
       icon: 'pi pi-plus',
