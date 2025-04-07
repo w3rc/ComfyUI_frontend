@@ -1,5 +1,5 @@
 <template>
-  <div class="workflow-tabs-container flex flex-row max-w-full h-full">
+  <div class="workflow-tabs-container flex flex-row max-w-full h-full hidden">
     <ScrollPanel
       ref="scrollPanelRef"
       class="overflow-hidden no-drag"

@@ -55,3 +55,4 @@ dist.zip
 
 # Temporary repository directory
 templates_repo/
+yarn.lock

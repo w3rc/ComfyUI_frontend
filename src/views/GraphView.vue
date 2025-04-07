@@ -1,8 +1,8 @@
 <template>
   <div class="comfyui-body grid h-screen w-screen overflow-hidden">
-    <!-- <div class="comfyui-body-top" id="comfyui-body-top">
+    <div class="comfyui-body-top" id="comfyui-body-top">
       <TopMenubar v-if="useNewMenu === 'Top'" />
-    </div> -->
+    </div>
     <div class="comfyui-body-bottom" id="comfyui-body-bottom">
       <TopMenubar v-if="useNewMenu === 'Bottom'" />
     </div>
@@ -139,11 +139,11 @@ watchEffect(() => {
 })
 
 const useNewMenu = computed(() => {
-  return settingStore.get('Comfy.UseNewMenu')
+  return "Disabled"
 })
 watchEffect(() => {
   if (useNewMenu.value === 'Disabled') {
-    app.ui.menuContainer.style.setProperty('display', 'block')
+    app.ui.menuContainer.style.setProperty('display', 'none')
     app.ui.restoreMenuPosition()
   } else {
     app.ui.menuContainer.style.setProperty('display', 'none')
