@@ -33,7 +33,6 @@
 </template>
 
 <script setup lang="ts">
-import { ZIndex } from '@primeuix/utils/zindex'
 import { usePrimeVue } from '@primevue/core'
 import Dialog from 'primevue/dialog'
 import { computed, onMounted } from 'vue'
@@ -49,8 +48,8 @@ const baseZIndex = computed(() => {
 })
 
 onMounted(() => {
-  const mask = document.createElement('div')
-  ZIndex.set('model', mask, baseZIndex.value)
+  // const mask = document.createElement('div')
+  // ZIndex.set('model', mask, baseZIndex.value)
 })
 </script>
 
