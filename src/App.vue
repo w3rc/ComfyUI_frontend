@@ -4,7 +4,7 @@
     v-if="isLoading"
     class="absolute inset-0 flex justify-center items-center h-screen"
   />
-  <GlobalDialog />
+  <!-- <GlobalDialog /> -->
   <BlockUI full-screen :blocked="isLoading" />
 </template>
 
