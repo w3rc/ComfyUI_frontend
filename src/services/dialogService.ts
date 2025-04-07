@@ -89,22 +89,22 @@ export const useDialogService = () => {
     })
   }
 
-  function showTemplateWorkflowsDialog(
-    props: InstanceType<typeof TemplateWorkflowsContent>['$props'] = {}
-  ) {
-    dialogStore.showDialog({
-      key: 'global-template-workflows',
-      title: t('templateWorkflows.title'),
-      component: TemplateWorkflowsContent,
-      headerComponent: TemplateWorkflowsDialogHeader,
-      dialogComponentProps: {
-        pt: {
-          content: { class: '!px-0 overflow-y-hidden' }
-        }
-      },
-      props
-    })
-  }
+  // function showTemplateWorkflowsDialog(
+  //   props: InstanceType<typeof TemplateWorkflowsContent>['$props'] = {}
+  // ) {
+  //   dialogStore.showDialog({
+  //     key: 'global-template-workflows',
+  //     title: t('templateWorkflows.title'),
+  //     component: TemplateWorkflowsContent,
+  //     headerComponent: TemplateWorkflowsDialogHeader,
+  //     dialogComponentProps: {
+  //       pt: {
+  //         content: { class: '!px-0 overflow-y-hidden' }
+  //       }
+  //     },
+  //     props
+  //   })
+  // }
 
   function showIssueReportDialog(
     props: InstanceType<typeof IssueReportDialogContent>['$props']
@@ -292,7 +292,7 @@ export const useDialogService = () => {
     showSettingsDialog,
     showAboutDialog,
     showExecutionErrorDialog,
-    showTemplateWorkflowsDialog,
+    // showTemplateWorkflowsDialog,
     showIssueReportDialog,
     showManagerDialog,
     showManagerProgressDialog,
